@@ -1,5 +1,42 @@
 #news {
-    h2.title, p.subtitle {
+    padding: 10px 0 40px 0 ;
+    
+    .title, .subtitle {
         color: @secondaryColor;
+    }
+    .subtitle {
+        margin-bottom: 20px;
+    }
+
+    .news-title, .date, .text {
+        color: @secondaryColor;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        color: @secondaryColor;
+        opacity: .4;
+        transition: opacity 1s ease-out;
+        h3, p {
+            opacity: .8;
+            transition: opacity 1s ease-out;
+        }
+        
+        &:hover {
+            opacity: 1;
+            h3,p {
+                opacity: 1;
+            }
+        }
+    }
+    img {
+        margin-bottom: 10px;
+    }
+    .title {
+        margin-bottom: 5px;
+    }
+    .date {
+        margin-bottom: 20px;
+        font-size: 11px;
     }
 }

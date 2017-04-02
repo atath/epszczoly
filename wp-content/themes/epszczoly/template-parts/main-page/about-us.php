@@ -6,7 +6,13 @@
         </div>
         <div class="col-md-8 col-xs-12">
             <h2 class="title">O nas, pszczelich opiekunach</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis pariatur et at autem minus ea quia quas reiciendis sapiente illum porro iusto nemo eos quaerat unde hic asperiores accusamus veniam facere similique doloremque odit voluptate, numquam! Eligendi sapiente id esse cumque nemo, dignissimos soluta repellendus?</p>
+            <p>Pragniemy podzielić się z Państwem własną wiedzą, jaką udało nam się zebrać gospodarując w naszej 80 pniowej pasiece. Pasiekę stanowią ule wielkopolskie, w całości drewniane, ocieplane sieczką ze słomy żytniej, własnoręcznie wykonane przez seniora Jerzego. <br><br>
+Stawiamy na ekologię, co pozwala uzyskać produkty o najwyższej jakości.
+W trosce o jakość produktu finalnego, wprowadzamy coraz to nowsze rozwiązania.
+Pasieka zgłoszona jest do Powiatowego lekarza weterynarii, pod numerem 10155610. 
+Zezwolenie to potwierdza spełnienie przez nas wymagań weterynaryjnych dotyczących pozyskiwania produktów pszczelich, przeznaczonych do sprzedaży bezpośredniej. <br><br>
+Dydaktyczny aspekt naszej działalności stanowią prelekcje i warsztaty tematyczne, o znaczeniu pszczół i produktów pszczelich. <br><br>
+Zapraszamy do skorzystania z naszej wiedzy i naszych obserwacji w wieloletniej praktyce pszczelarskiej.</p>
         </div>
     </div>
 </section>
