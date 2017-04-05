@@ -1,36 +1,47 @@
 #news {
     padding: 10px 0 40px 0 ;
-    
-    .title, .subtitle {
-        color: @secondaryColor;
-    }
-    .subtitle {
-        margin-bottom: 20px;
-    }
-
-    .news-title, .date, .text {
-        color: @secondaryColor;
-        margin: 0;
-        padding: 0;
-    }
     a {
-        color: @secondaryColor;
-        opacity: .4;
-        transition: opacity 1s ease-out;
-        h3, p {
-            opacity: .8;
-            transition: opacity 1s ease-out;
-        }
-        
+        color: @secondaryColor;        
         &:hover {
-            opacity: 1;
-            h3,p {
+            img, .news-title, .date, .text {
                 opacity: 1;
             }
         }
     }
     img {
         margin-bottom: 10px;
+        transition: opacity .3s;
+        opacity: .6;
+    }
+    .title, .subtitle {
+        color: @secondaryColor;
+    }
+    .subtitle {
+        margin-bottom: 20px;
+    }
+    .text {
+        max-height: 120px;
+        overflow: hidden;
+    }
+    .news-image {
+        max-height: 247px;
+        overflow: hidden;
+        position: relative;
+        height: 247px;
+        display: block;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .news-title, .date, .text {
+        color: @secondaryColor;
+        margin: 0;
+        padding: 0;
+        opacity: .6;
+        transition: opacity .3s;
     }
     .title {
         margin-bottom: 5px;

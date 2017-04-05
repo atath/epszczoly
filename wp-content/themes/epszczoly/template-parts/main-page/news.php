@@ -1,3 +1,11 @@
+<?php
+$posts = get_posts( array(
+   'numberposts' => 3
+) );
+?>
+<?php 
+    if( $posts ) {
+?>
 <section id="news" class="container">
     <div class="row">
         <div class="col-sm-12">
@@ -6,29 +14,32 @@
         </div>
     </div>
     <div class="row">
+        <?php
+        foreach ( $posts as $post ) {
+            ?>
         <div class="col-sm-12 col-md-4">
-            <a href="">
-                <img src="<?php bloginfo( 'template_url' ); ?>/assets/images/pexels-photo-27644.jpg" alt="">
-                <span class="date">23.12.2015</span>
-                <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum!</h3>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae earum, hic impedit, maxime quod quis temporibus excepturi? Minima deleniti eaque officia.</p>
+            <a href="<?php echo get_permalink( $post->ID ) ?>">
+                <?php $featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); ?>
+                <div class="news-image">
+                    <img src="
+                <?php 
+                    if ($featuredImage) {
+                       echo  $featuredImage[0];
+                    } else { 
+                        echo bloginfo( 'template_url' ).'/assets/images/pexels-photo-27644.jpg'; 
+                    } ?>" alt="">    
+                </div>
+                
+                <span class="date"><?php echo get_the_time('d/m/Y', $post->ID); ?></span>
+                <h3 class="news-title"><?php echo get_the_title( $post->ID ); ?></h3>
+                <p class="text"><?php echo wp_strip_all_tags(get_extended ( $post->post_content )['main']); ?></p>
             </a>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <a href="">
-                <img src="<?php bloginfo( 'template_url' ); ?>/assets/images/pexels-photo-27644.jpg" alt="">
-                <span class="date">23.12.2015</span>
-                <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum!</h3>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut commodi suscipit, corporis atque sequi.</p>
-            </a>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <a href="">
-                <img src="<?php bloginfo( 'template_url' ); ?>/assets/images/pexels-photo-27644.jpg" alt="">
-                <span class="date">23.12.2015</span>
-                <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum!</h3>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quis voluptatem ea perferendis delectus suscipit minima exercitationem, nam sunt, omnis voluptate minus, officia illo corrupti. Velit dolorem neque illum eveniet magni optio dolores nam modi sit, mollitia laudantium sint corporis iusto officia beatae.</p>
-            </a>
-        </div>
+        </div>    
+        <?php 
+        }
+        ?>
     </div>
 </section>
+<?php 
+}
+?>
