@@ -5,23 +5,22 @@
         &:hover {
             img, .news-title, .date, .text {
                 opacity: 1;
+                color: @primaryColor
             }
         }
     }
     img {
         margin-bottom: 10px;
         transition: opacity .3s;
-        opacity: .6;
+        // opacity: .6;
     }
     .title, .subtitle {
         color: @secondaryColor;
     }
-    .subtitle {
-        margin-bottom: 20px;
-    }
     .text {
         max-height: 120px;
         overflow: hidden;
+        font-size: 16px;
     }
     .news-image {
         max-height: 247px;
@@ -29,25 +28,26 @@
         position: relative;
         height: 247px;
         display: block;
+        margin-bottom: 5px;
         img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            box-shadow: 0 0 1px @primaryColor;
         }
     }
     .news-title, .date, .text {
         color: @secondaryColor;
-        margin: 0;
         padding: 0;
-        opacity: .6;
+        // opacity: .6;
         transition: opacity .3s;
     }
-    .title {
-        margin-bottom: 5px;
+    .news-title {
+        margin-bottom: -10px;
     }
     .date {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         font-size: 11px;
     }
 }

@@ -29,9 +29,8 @@ $posts = get_posts( array(
                         echo bloginfo( 'template_url' ).'/assets/images/pexels-photo-27644.jpg'; 
                     } ?>" alt="">    
                 </div>
-                
-                <span class="date"><?php echo get_the_time('d/m/Y', $post->ID); ?></span>
                 <h3 class="news-title"><?php echo get_the_title( $post->ID ); ?></h3>
+                <span class="date"><?php echo get_the_time('d/m/Y', $post->ID); ?></span><span class="author"><?php echo get_the_author($post->ID); ?></span>
                 <p class="text"><?php echo wp_strip_all_tags(get_extended ( $post->post_content )['main']); ?></p>
             </a>
         </div>    
