@@ -2,10 +2,10 @@
 <section id="about-us">
     <div class="row">
         <div class="col-md-5 col-lg-4 hidden-xs">
-            <div class="image2" style="background-image: url(<?php bloginfo('template_url') ?>/assets/images/about_us.jpg)"></div>
+            <div class="image2 slide-from-left" style="background-image: url(<?php bloginfo('template_url') ?>/assets/images/about_us.jpg)"></div>
         </div>
         <div class="col-md-7 col-lg-8 col-xs-12">
-            <span class="text">
+            <span class="text slide-from-right">
                 <h2 class="title">O nas, pszczelich opiekunach</h2>
                 <p>Pragniemy podzielić się z Państwem własną wiedzą, jaką udało nam się zebrać gospodarując w naszej 80 pniowej pasiece. Pasiekę stanowią ule wielkopolskie, w całości drewniane, ocieplane sieczką ze słomy żytniej, własnoręcznie wykonane przez seniora Jerzego. <br><br>
     Stawiamy na ekologię, co pozwala uzyskać produkty o najwyższej jakości.

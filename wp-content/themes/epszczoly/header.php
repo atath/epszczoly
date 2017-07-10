@@ -8,12 +8,11 @@
 
 <?php wp_head(); ?>
 <link href="https://fonts.googleapis.com/css?family=Baloo|Open+Sans:300,400,600,700" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
 <body <?php body_class(); ?>>
-<header>
+<header id="page-header" class="slide-from-top">
 	<div class="container">
 		<div class="left">
 			logo

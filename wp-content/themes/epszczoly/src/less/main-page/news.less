@@ -1,5 +1,5 @@
 #news {
-    padding: 10px 0 40px 0 ;
+    padding: 10px 25px 40px 25px ;
     a {
         color: @secondaryColor;        
         &:hover {
@@ -18,9 +18,7 @@
         color: @secondaryColor;
     }
     .text {
-        max-height: 120px;
         overflow: hidden;
-        font-size: 16px;
     }
     .news-image {
         max-height: 247px;
@@ -29,6 +27,7 @@
         height: 247px;
         display: block;
         margin-bottom: 5px;
+        background-size: cover;
         img {
             position: absolute;
             top: 50%;
@@ -49,5 +48,18 @@
     .date {
         margin-bottom: 50px;
         font-size: 11px;
+    }
+    .news {        
+        display: none;
+        @media screen and (min-width: 1201px) {
+            display: block;
+        }
+        @media screen and (max-width: 1200px) {
+            &:nth-of-type(-n+4) {
+                display: block;
+            }
+            
+        }
+
     }
 }

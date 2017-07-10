@@ -1,16 +1,25 @@
 #slogan {
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    background-image: url(../images/free.jpeg);
-    background-position: 50% 50%;
+    .img{
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        background-image: url(../images/slogan.jpg);
+        background-position: 0px 50%;
+        background-size: cover;
+        background-attachment: fixed;
+    }    
     h2 {
         position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0;
+        color: @white; 
+                margin: 0;
         padding: 0;
-        color: @white;
+    }
+    span {
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        margin-left: 305px;
     }
 }
